@@ -11,17 +11,18 @@
 //var declarations
 var fizz = "Fizz";
 var buzz = "Buzz";
+var list = document.getElementById("list");
 
 //print loop
 for (var i = 1; i <= 100; i++) {
 
     if (i%3 == 0 && i%5 != 0) {
-        document.getElementById("list").innerHTML += "<li>" + fizz + "</li>";
+        list.innerHTML += "<li>" + fizz + "</li>";
     } else if (i%5 == 0 && i%3 != 0) {
-        document.getElementById("list").innerHTML += "<li>" + buzz + "</li>";
+        list.innerHTML += "<li>" + buzz + "</li>";
     } else if (i%5 == 0 && i%3 == 0) {
-        document.getElementById("list").innerHTML += "<li>" + fizz + buzz + "</li>";
+        list.innerHTML += "<li>" + fizz + buzz + "</li>";
     } else {
-        document.getElementById("list").innerHTML += "<li>" + i + "</li>";
+        list.innerHTML += "<li>" + i + "</li>";
     }
 }
