@@ -12,16 +12,16 @@
 var fizz = "Fizz";
 var buzz = "Buzz";
 
-//console print loop
+//print loop
 for (var i = 1; i <= 100; i++) {
 
     if (i%3 == 0 && i%5 != 0) {
-        console.log(fizz)
+        document.getElementById("list").innerHTML += "<li>" + fizz + "</li>";
     } else if (i%5 == 0 && i%3 != 0) {
-        console.log(buzz)
+        document.getElementById("list").innerHTML += "<li>" + buzz + "</li>";
     } else if (i%5 == 0 && i%3 == 0) {
-        console.log(fizz + buzz)
+        document.getElementById("list").innerHTML += "<li>" + fizz + buzz + "</li>";
     } else {
-        console.log(i);
+        document.getElementById("list").innerHTML += "<li>" + i + "</li>";
     }
 }
